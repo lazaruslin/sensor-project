@@ -2,7 +2,7 @@ const express = require("express");
 const get_sensor_reading=require("./get-reading");
 const app = express();
 app.get("/temperature",(req, res) => {
-    get_sensor_readings((err,temperature,humidity)=>{
+    get_sensor_reading((err,temperature,humidity)=>{
 		if(!err) 
 		{
 			let my_temperature=temperature.toFixed(1);
@@ -12,7 +12,7 @@ app.get("/temperature",(req, res) => {
 	});
 });
 app.get("/humidity",(req, res) => {
-    get_sensor_readings((err,temperature,humidity)=>{
+    get_sensor_reading((err,temperature,humidity)=>{
 		if(!err) 
 		{
 			let my_humidity=humidity.toFixed(1);

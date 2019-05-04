@@ -1,5 +1,5 @@
 const sensor =require("node-dht-sensor");
-const get_sensor_readings=(callback)=>{
+const get_sensor_reading=(callback)=>{
    sensor.read(11,17,(err,temperature,humidity)=>{
        if(err)
        {
