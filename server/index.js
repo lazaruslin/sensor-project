@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-app.get("/remperature",(req, res) => {
+app.get("/temperature",(req, res) => {
 	res.send("24°C");
 });
 app.get("/humidity",(req, res) => {
