@@ -16,7 +16,7 @@ $(document).ready(function() {
 		type: "line",
 		data: {
 			labels: [],
-			dataset: [{
+			datasets: [{
 				data: [],
 				backgroundColor: "rgba(0,200,100,0.5)"
 			}]
@@ -38,7 +38,7 @@ $(document).ready(function() {
 		type: "line",
 		data: {
 			labels: [],
-			dataset: [{
+			datasets: [{
 				data: [],
 				backgroundColor: "rgba(0,200,100,0.5)"
 			}]
@@ -82,7 +82,6 @@ $(document).ready(function() {
 			}
 			.catch(e => console.log("Oops, error", e))
 	}
-	
 	
 	setInterval(() => {
 		fetch_humidity();
